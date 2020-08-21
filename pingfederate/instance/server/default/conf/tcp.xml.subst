@@ -21,11 +21,11 @@
 
             bind_addr="${_DOLLAR_}{pf.cluster.bind.address}"
             log_discard_msgs="false"/>
-	<!--
+	
    <TCPPING initial_hosts="${_DOLLAR_}{pf.cluster.tcp.discovery.initial.hosts}"
             return_entire_cache="true"
             port_range="0"/>
-	-->
+	
     <!-- To enable discovery using the AWS SDK and a file stored in S3, comment out TCPPING, and uncomment the
          section below. This is the recommended dynamic discovery mechanism when running in AWS but not using Kubernetes.
          See https://github.com/jgroups-extras/native-s3-ping for further information on the available settings. -->
